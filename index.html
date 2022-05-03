@@ -72,33 +72,36 @@
 			<!-- Week Five -->
 			<tr>
 				<td>
-					<div class="title">Scapegoat Trees</div>
-					<div class="day">April 26</div>
+					<div class="title">Introduction, Platform Setup</div>
+					<div class="day">May 31</div>
 					<div id="w6">
 						<p>
-							Building a balanced binary search tree isn't easy - it took us two lectures to build
-							up to B-trees, for example. Is there an easier way to keep a BST balanced? The answer
-							is a resounding "yes" - provided that we're okay with amortized efficiency.
+							<ol>
+								<li>Brief Introduction</li>
+								<li>Tour of this page for best usage</li>
+								 <li>Programming Platform Setup</li>  
+								<li>  Introduction to programming </li>
+							</ol>
+															
 						</p>
 						<p>
-						  Slides:
+						  Notebook/Slides:
 						</p>
 						<ul>
-						  <li><a href="lectures/08/Slides08.pdf">Lecture Slides</a></li>
-						  <li><a href="lectures/08/Small08.pdf">Condensed Slides</a></li>
+						  <li><a href="tt.pdf">To be Uploaded</a></li>
 						</ul>
 						<p>
-							Readings:
+							Recording:
 						</p>
 						<ul>
-							<li>Galperin, Igal and Rivest, Ronald. <a class="paper" href="restricted/papers/GalperinRivestScapegoatTrees.pdf">Scapegoat Trees.</a></li>
+							<li>To be Uploaded <a class="paper" href="tt.pdf">May 31</a></li>
 						</ul>
 					</div>
 				</td>
 				
 				<td>
-					<div class="title">Tournament Heaps</div>
-					<div class="day">April 28</div>
+					<div class="title">Basic Datatypes</div>
+					<div class="day">June 2</div>
 					<div class="m3">
 						<p>
 							Tournament heaps are a simple and flexible priority queue structure
@@ -123,269 +126,8 @@
 						</ul>
 					</div>		
 				</td>
-	        </tr>
-			
-			<!-- Week Four -->
-			<tr>
-				<td>
-					<div class="title">Cuckoo Hashing</div>
-					<div class="day">April 19</div>
-					<div id="w6">
-						<p>
-							Most hash tables give expected O(1) lookups. Can we make hash tables
-							with no collisions at all, and if so, can we do it efficiently?
-							Amazingly, the answer is yes. There are many schemes for achieving
-							this, one of which, cuckoo hashing, is surprisingly simple to
-							implement. The analysis, on the other hand, goes deep into properties
-							of random graph theory.
-						</p>
-						<p>
-						  Slides:
-						</p>
-						<ul>
-						  <li><a href="lectures/06/Slides06.pdf">Lecture Slides</a></li>
-						  <li><a href="lectures/06/Small06.pdf">Condensed Slides</a></li>
-						</ul>
-						<p>
-							Readings:
-						</p>
-						<ul>
-							<li>Pagh, Rasmus and Rodler, Flemming. <a class="paper" href="restricted/papers/PaghRodlerCuckooHashing.pdf">Cuckoo Hashing</a></li>
-						</ul>
-					</div>
-				</td>
-				
-				<td>
-					<div class="title">Amortized Analysis</div>
-					<div class="day">April 21</div>
-					<div id="m0">
-						<p>
-							In many cases we only care about the total time required to process
-							a set of data. In those cases, we can design data structures that
-							make some operations more expensive in order to lower the total cost
-							of all aggregate operations. How do you analyze these structures?
-						</p>
-						<p>
-						  Slides:
-						</p>
-						<ul>
-							<li><a href="lectures/07/Slides07.pdf">Lecture Slides</a></li>
-							<li><a href="lectures/07/Small07.pdf">Condensed Slides</a></li>
-						</ul>
-						<p>
-							Readings:
-						</p>
-						<ul>
-							<li>CLRS: Chapter 17</li>
-						</ul>
-						<p>
-						  Assignments:
-						</p>
-						<ul>
-						  <li><a href="handouts/100P Problem Set 3.pdf">Handout 10P: Problem Set 3</a> |
-						      <a href="assignments/ps3_template.tex"> (LaTeX Template)</a></li>
-						  <li><a href="handouts/100I Individual Assessment 3.pdf">Handout 10I: Individual Assessment 3</a> |
-						      <a href="assignments/ia3_template.tex"> (LaTeX Template)</a></li>
-					</div>
-				</td>
-			</tr>
-			
-			<!-- Week Three -->
-			<tr>
-				<td>
-					<div class="title">Hashing and Sketching, Part I</div>
-					<div class="day">April 12</div>
-					<div class="m6">
-						<p>
-							How can Google keep track of frequent search queries without storing
-							all the queries it gets in memory? How can you estimate frequently-
-							occurring tweets without storing every tweet in RAM? As long as
-							you're willing to trade off accuracy for space, you get get excellent
-							approximations.
-						</p>
-						<p>
-						  Slides:
-						</p>
-						<ul>
-							<li><a href="lectures/04/Slides04.pdf">Lecture Slides</a></li>
-							<li><a href="lectures/04/Small04.pdf">Condensed Slides</a></li>
-						</ul>
-						<p>
-							Readings:
-						</p>
-						<ul>
-							<li>Cormode, Graham and Muthukrishnan, C. <a class="paper" href="restricted/papers/CormodeMuthukrishnan.pdf">An Improved Data Stream Summary: The Count-Min Sketch and its Applications</a>.</li>
-						</ul>
-						<p>
-						  Assignments:
-						</p>
-						<ul>
-						  <li><a href="handouts/070P Problem Set 2.pdf">Handout 07P: Problem Set 2</a> |
-						      <a href="assignments/ps2_template.tex"> (LaTeX Template)</a></li>
-						  <li><a href="handouts/070I Individual Assessment 2.pdf">Handout 07I: Individual Assessment 2</a> |
-						      <a href="assignments/ia2_template.tex"> (LaTeX Template)</a></li>
-						  <li><a href="restricted/papers/PughSkipLists.pdf">Pugh, William. <i>Skip Lists: A Probabilistic Alternative to Balanced Trees</i></a></li>
-						  <li><a href="handouts/080 Research Project.pdf">Handout 08: Research Project</a></li>
-						  <li><a href="handouts/090 Suggested Project Topics.pdf">Handout 09: Suggested Project Topics</a></li>
-						</ul>
-					</div>
-				</td>
-				
-				<td>
-					<div class="title">Hashing and Sketching, Part II</div>
-					<div class="day">April 14</div>
-					<div class="m6">
-						<p>
-							We've now seen how to build an estimator: make a simple data structure that gives a good chance of success, then
-							run it in parallel. This idea can be extended to build frequency estimators with other properties, as well as to
-							build estimators for how many distinct items we've seen.
-						</p>
-						<p>
-						  Slides:
-						</p>
-						<ul>
-							<li><a href="lectures/05/Slides05.pdf">Lecture Slides</a></li>
-							<li><a href="lectures/05/Small05.pdf">Condensed Slides</a></li>
-						</ul>
-						<p>
-							Readings:
-						</p>
-						<ul>
-							<li>Charikar et al. <a class="paper" href="restricted/papers/CharikarChenColtonCountSketch.pdf">Finding Frequent Items in Data Streams</a>.</li>
-							<li>Flajolet et al. <a class="paper" href="restricted/papers/FlajoletEtAlHyperLogLog.pdf">HyperLogLog: The Analysis of a Near-Optimal Cardinality Estmiation Algorithm</a>.</li>
-						</ul>
-					</div>	
-				</td>
-			</tr>
-			
-			<!-- Week Two -->
-			<tr>
-				<td>
-					<div class="title">Balanced Trees, Part I</div>
-					<div class="day">April 5</div>
-					<div id="m0">
-						<p>
-							Balanced search trees are among the most versatile and flexible data structures. They're used extensively in theory
-							and in practice. What sorts of balanced trees exist? How would you design them? And what can you do with them?
-						</p>
-						    Slides:
-						</p>
-						<ul>
-							<li><a href="lectures/02/Slides02.pdf">Lecture Slides</a></li>
-							<li><a href="lectures/02/Small02.pdf">Condensed Slides</a></li>
-						</ul>
-						<p>
-						  Handouts:
-						</p>
-						<ul>
-						  <li><a href="handouts/060P Problem Set 1.pdf">Problem Set 1</a> | <a href="assignments/ps1_template.tex">LaTeX Template</a></li>
-						  <li><a href="handouts/060I Individual Assessment 1.pdf">Individual Assessment 1</a> | <a href="assignments/ia1_template.tex">LaTeX Template</a></li>
-						</ul>
-						<p>
-							Readings:
-						</p>
-						<ul>
-							<li>Bayer, Rudolf and McCreight, Edward. <i><a href="restricted/papers/BayerMcCreightBTrees.pdf">Organization and
-							Maintenance of Large Ordered Indices</a></i></li>
-							<li>Guibas, Leo and Sedgewick, Robert. <i><a href="restricted/papers/GuibasSedgewickRedBlack.pdf">A Dichromatic
-							Framework for Balanced Trees</a></i></li>
-						</ul>
-					</div>
-				</td>
-				
-				<td>
-					<div class="title">Balanced Trees, Part II</div>
-					<div class="day">April 7</div>
-					<div id="m0">
-						<p>
-							Our last lecture concluded with a view of red/black trees as isometries of 2-3-4 trees. How far does this
-							connection go? How can we use it to derive the rules for red/black trees? And now that we've got red/black trees,
-							what else can we do with them?
-						</p>						
-						<p>
-						  Slides:
-						</p>
-						<ul>
-							<li><a href="lectures/03/Slides03.pdf">Lecture Slides</a></li>
-                            <li><a href="lectures/03/Small03.pdf">Condensed Slides</a></li>
-						</ul>
-						<p>
-							Readings:
-						</p>
-						<ul>
-							<li>CLRS, Chapter 14.</li>
-						</ul>
-					</div>
-				</td>
-			</tr>
-
-			
-			<!-- Week One -->			
-			<tr>
-				<td>
-					<div class="title">Range Minimum Queries, Part One</div>
-					<div class="day">March 29</div>
-					<div id="m0">
-						<p>
-							The range minimum query problem is the following: given an array,
-							preprocess it so that you can efficiently determine the smallest
-							value in a variety of subranges. RMQ has tons of applications
-							throughout computer science and is an excellent proving ground for
-							a number of advanced algorithmic techniques.
-						</p>
-						<p>
-						  Slides:
-						</p>
-						<ul>
-							<li><a href="lectures/00/Slides00.pdf">Slides</a></li>
-							<li><a href="lectures/00/Small00.pdf">Condensed Slides</a></li>
-						</ul>
-						<p>
-							Readings: 
-						</p>
-						<ul>
-							<li><a href="handouts/000 Course Information.pdf">Handout 00: Course Information</a></li>
-							<li><a href="handouts/010 CS166 Calendar.pdf">Handout 01: CS166 Calendar</a></li>
-							<li><a href="handouts/020 Mathematical Terms and Identities.pdf">Handout 02: Math Terms and Identities</a></li>
-							<li><a href="handouts/030 Assignment Policies.pdf">Handout 03: Assignment Policies</a></li>
-							<li><a href="handouts/040 Honor Code.pdf">Handout 04: CS166 and the Honor Code</a></li>
-						</ul>
-						<p>
-						    Assignments:
-						</p>
-						<ul>
-						    <li><a href="https://forms.gle/KesdCgq7xGwiZmSL6">Individual Assessment 0</a></li>
-						</ul>
-					</div>
-					
-				</td>
-				<td>
-					<div class="title">Range Minimum Queries, Part Two</div>
-					<div class="day">March 31</div>
-					<div id="w0">
-						<p>
-							Our last lecture took us very, very close to a &langle;O(n), O(1)&rangle;-time solution to RMQ.
-							Using a new data structure called a Cartesian tree in conjunction with a technique called the
-							Method of Four Russians, we can adapt our approach to end up with a linear-preprocessing-time,
-							constant-query-time solution to RMQ. In doing so, we'll see a number of clever techniques that
-							will appear time and time again in data structure design.
-						</p>
-						<p>
-						    Slides:
-						</p>
-						<ul>
-							<li><a href="lectures/01/Slides01.pdf">Lecture Slides</a></li>
-							<li><a href="lectures/01/Small01.pdf">Condensed Slides</a></li>
-						</ul>
-						<p>
-							Readings:
-						</p>
-						<ul>
-							<li>Fischer, Johannes and Heun, Volker. <i><a href="restricted/papers/FischerHeunRMQLCA.pdf">Theoretical and Practical Improvements
-							on the RMQ-Problem, with Applications to LCA and LCE</a></i>
-						</ul>
-				</td>
-			</tr>
+	       		 </tr>
+		
 		</table>
 	</div> 
 </div> 
