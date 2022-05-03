@@ -1,262 +1,391 @@
-<!doctype html>
-<html class="no-js" lang="en">
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="author" content="webteam@pcc.edu" />
-		        <title>Table Layout for Screen Readers | Instructional Support at PCC</title>
-        <script>/* Google Tag Manager */(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TVQCHWR');</script>
-        <link rel="stylesheet" href="/_source-v6/vendor/foundation-5.4.0/css/foundation.min.css?v=20180620">
-        <link rel="stylesheet" href="/_source-v6/styles/style.min.css?v=20200317">
-        <link rel="stylesheet" href="/_source-v6/styles/print.min.css?v=20180620" media="print">
-        <link rel="stylesheet" href="/_source-v6/vendor/fonts/fontawesome/css/fontawesome-all.min.css?v=20180808">
-        <link rel="icon" href="/_source-v6/images/favicon.ico" type="image/x-icon">
-        <link rel="shortcut icon" href="/_source-v6/images/favicon.ico">
-        <!--[if lt IE 9]>
-          <script src="/_source-v6/vendor/foundation-5.4.0/js/vendor/modernizr.js"></script>
-        <![endif]-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+	<meta http-equiv="Content-Language" content="en-us" /> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
 
-        
-        <meta name='robots' content='max-image-preview:large' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel='stylesheet' id='wp-block-library-css'  href='https://www.pcc.edu/instructional-support/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1' type='text/css' media='all' />
-<link rel='stylesheet' id='parent-style-css'  href='https://www.pcc.edu/instructional-support/wp-content/themes/pcc-v6/style.css?ver=5.8.1' type='text/css' media='all' />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.pcc.edu/instructional-support/wp-includes/wlwmanifest.xml" /> 
-<link rel="canonical" href="https://www.pcc.edu/instructional-support/accessibility/d2l/tablelayout/" />
-<link rel='shortlink' href='https://www.pcc.edu/instructional-support/?p=808' />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css" />
+ 	
+	<title>CS166: Data Structures</title> 
+</head> 
+<body> 
+<div id = "data" align="center"> 
+	<div id = "header_bar"></div> 
+	
+	<div id = "announcement_bar">
+		<h1>Announcements</h1>
 
-        		<!-- Open graph -->
-  		<meta property="og:url"           content="https://www.pcc.edu/instructional-support/accessibility/d2l/tablelayout/" />
-  		<meta property="og:type"          content="website" />
-  		<meta property="og:title"         content="Table Layout for Screen Readers" />
-  		<meta property="og:description"   content="Good Table This table is easier to understand when using a screen reader because the column headers are indicated in the html code and the cells are not merged. Adding..." />
-		<meta property="og:image"         content="https://www.pcc.edu/_source-v6/images/missing-image.png" />
-        	</head>
-	<body >
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVQCHWR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- Google Tag Manager (noscript) -->
-	<section aria-label="Skip to page content"><a href="#main" id="skip">Skip to page content</a></section>
+		<div class="header">Welcome to CS166!</div> 
+		<div class="date"  >March 23, 2022</div> 
+		<div class="announcement"> 
+			<p> 
+				Welcome to CS166, a course in the design, analysis, and implementation
+				of data structures. We've got an exciting quarter ahead of us - the data 
+				structures we'll investigate are some of the most beautiful constructs
+				I've ever come across - and I hope you're able to join us.
+			</p> 
+			<p>
+			    As a quick logistical note, <strong>the first two weeks of CS166 will be run
+			    remotely</strong>. Specifically, the first week will be conducted over Zoom, and
+			    the second week will consist of prerecorded lectures. After that, we'll
+			    switch to in-person instruction. Thanks for your understanding!
+			</p>
+			<p>
+				CS166 has two prerequisites - CS107 and CS161. From CS107, we'll assume
+				that you're comfortable working from the command-line; designing, testing,
+				and debugging nontrivial programs; manipulating pointers and arrays;
+				using bitwise operators; and reasoning about the memory hierarchy. From
+				CS161, we'll assume you're comfortable designing and analyzing nontrivial
+				algorithms; using O, o, &Theta;, &Omega;, and &omega; notation;
+				solving recurrences; working through standard graph and sequence
+				algorithms; and structuring proofs of correctness.
+			</p>
+			<p> 
+				We'll update this site with more information as we get closer to the
+				start of the quarter. In the meantime, feel free to email me at
+				<a href="htiek@cs.stanford.edu">htiek@cs.stanford.edu</a> if you have
+				any questions about the class!
+			</p>
+		</div> 
+	</div> 
+	
+	<div id="spacer">&nbsp;</div>
+	
+	<div id="non_code_bar"> 
+		<h1>Schedule and Readings</h1>
+		<p>
+			<i>This syllabus is still under construction and is subject to change as
+			we fine-tune the course. Stay tuned for more information and updates!</i>
+		</p>
+		<table class="schedule" cellspacing="15">
+			<colgroup>
+				<col width="50%"/>
+				<col width="50%"/>
+			</colgroup>
+			<tr>
+				<th>Tuesday</th>
+				<th>Thursday</th>
+			</tr>
+			
+			<!-- Week Five -->
+			<tr>
+				<td>
+					<div class="title">Scapegoat Trees</div>
+					<div class="day">April 26</div>
+					<div id="w6">
+						<p>
+							Building a balanced binary search tree isn't easy - it took us two lectures to build
+							up to B-trees, for example. Is there an easier way to keep a BST balanced? The answer
+							is a resounding "yes" - provided that we're okay with amortized efficiency.
+						</p>
+						<p>
+						  Slides:
+						</p>
+						<ul>
+						  <li><a href="lectures/08/Slides08.pdf">Lecture Slides</a></li>
+						  <li><a href="lectures/08/Small08.pdf">Condensed Slides</a></li>
+						</ul>
+						<p>
+							Readings:
+						</p>
+						<ul>
+							<li>Galperin, Igal and Rivest, Ronald. <a class="paper" href="restricted/papers/GalperinRivestScapegoatTrees.pdf">Scapegoat Trees.</a></li>
+						</ul>
+					</div>
+				</td>
+				
+				<td>
+					<div class="title">Tournament Heaps</div>
+					<div class="day">April 28</div>
+					<div class="m3">
+						<p>
+							Tournament heaps are a simple and flexible priority queue structure
+							that supports efficient melding of priority queues. The intuition
+							behind binomial heaps is particularly elegant, and they'll serve
+							as a building block toward the more complex abdication heap data
+							structure that we'll talk about on Tuesday.
+						</p>
+						<p>
+						  Slides:
+						</p>
+						<ul>
+							<li><a href="lectures/09/Slides09.pdf">Lecture Slides</a></li>
+							<li><a href="lectures/09/Small09.pdf">Condensed Slides</a></li>
+						</ul>
+						<p>
+							Readings:
+						</p>
+						<ul>
+							<li>Vuillemin, Jean.
+							<a href="restricted/papers/VuilleminBinomialHeaps.pdf" class="paper">A Data Structure for Manipulating Priority Queues</a></li>
+						</ul>
+					</div>		
+				</td>
+	        </tr>
+			
+			<!-- Week Four -->
+			<tr>
+				<td>
+					<div class="title">Cuckoo Hashing</div>
+					<div class="day">April 19</div>
+					<div id="w6">
+						<p>
+							Most hash tables give expected O(1) lookups. Can we make hash tables
+							with no collisions at all, and if so, can we do it efficiently?
+							Amazingly, the answer is yes. There are many schemes for achieving
+							this, one of which, cuckoo hashing, is surprisingly simple to
+							implement. The analysis, on the other hand, goes deep into properties
+							of random graph theory.
+						</p>
+						<p>
+						  Slides:
+						</p>
+						<ul>
+						  <li><a href="lectures/06/Slides06.pdf">Lecture Slides</a></li>
+						  <li><a href="lectures/06/Small06.pdf">Condensed Slides</a></li>
+						</ul>
+						<p>
+							Readings:
+						</p>
+						<ul>
+							<li>Pagh, Rasmus and Rodler, Flemming. <a class="paper" href="restricted/papers/PaghRodlerCuckooHashing.pdf">Cuckoo Hashing</a></li>
+						</ul>
+					</div>
+				</td>
+				
+				<td>
+					<div class="title">Amortized Analysis</div>
+					<div class="day">April 21</div>
+					<div id="m0">
+						<p>
+							In many cases we only care about the total time required to process
+							a set of data. In those cases, we can design data structures that
+							make some operations more expensive in order to lower the total cost
+							of all aggregate operations. How do you analyze these structures?
+						</p>
+						<p>
+						  Slides:
+						</p>
+						<ul>
+							<li><a href="lectures/07/Slides07.pdf">Lecture Slides</a></li>
+							<li><a href="lectures/07/Small07.pdf">Condensed Slides</a></li>
+						</ul>
+						<p>
+							Readings:
+						</p>
+						<ul>
+							<li>CLRS: Chapter 17</li>
+						</ul>
+						<p>
+						  Assignments:
+						</p>
+						<ul>
+						  <li><a href="handouts/100P Problem Set 3.pdf">Handout 10P: Problem Set 3</a> |
+						      <a href="assignments/ps3_template.tex"> (LaTeX Template)</a></li>
+						  <li><a href="handouts/100I Individual Assessment 3.pdf">Handout 10I: Individual Assessment 3</a> |
+						      <a href="assignments/ia3_template.tex"> (LaTeX Template)</a></li>
+					</div>
+				</td>
+			</tr>
+			
+			<!-- Week Three -->
+			<tr>
+				<td>
+					<div class="title">Hashing and Sketching, Part I</div>
+					<div class="day">April 12</div>
+					<div class="m6">
+						<p>
+							How can Google keep track of frequent search queries without storing
+							all the queries it gets in memory? How can you estimate frequently-
+							occurring tweets without storing every tweet in RAM? As long as
+							you're willing to trade off accuracy for space, you get get excellent
+							approximations.
+						</p>
+						<p>
+						  Slides:
+						</p>
+						<ul>
+							<li><a href="lectures/04/Slides04.pdf">Lecture Slides</a></li>
+							<li><a href="lectures/04/Small04.pdf">Condensed Slides</a></li>
+						</ul>
+						<p>
+							Readings:
+						</p>
+						<ul>
+							<li>Cormode, Graham and Muthukrishnan, C. <a class="paper" href="restricted/papers/CormodeMuthukrishnan.pdf">An Improved Data Stream Summary: The Count-Min Sketch and its Applications</a>.</li>
+						</ul>
+						<p>
+						  Assignments:
+						</p>
+						<ul>
+						  <li><a href="handouts/070P Problem Set 2.pdf">Handout 07P: Problem Set 2</a> |
+						      <a href="assignments/ps2_template.tex"> (LaTeX Template)</a></li>
+						  <li><a href="handouts/070I Individual Assessment 2.pdf">Handout 07I: Individual Assessment 2</a> |
+						      <a href="assignments/ia2_template.tex"> (LaTeX Template)</a></li>
+						  <li><a href="restricted/papers/PughSkipLists.pdf">Pugh, William. <i>Skip Lists: A Probabilistic Alternative to Balanced Trees</i></a></li>
+						  <li><a href="handouts/080 Research Project.pdf">Handout 08: Research Project</a></li>
+						  <li><a href="handouts/090 Suggested Project Topics.pdf">Handout 09: Suggested Project Topics</a></li>
+						</ul>
+					</div>
+				</td>
+				
+				<td>
+					<div class="title">Hashing and Sketching, Part II</div>
+					<div class="day">April 14</div>
+					<div class="m6">
+						<p>
+							We've now seen how to build an estimator: make a simple data structure that gives a good chance of success, then
+							run it in parallel. This idea can be extended to build frequency estimators with other properties, as well as to
+							build estimators for how many distinct items we've seen.
+						</p>
+						<p>
+						  Slides:
+						</p>
+						<ul>
+							<li><a href="lectures/05/Slides05.pdf">Lecture Slides</a></li>
+							<li><a href="lectures/05/Small05.pdf">Condensed Slides</a></li>
+						</ul>
+						<p>
+							Readings:
+						</p>
+						<ul>
+							<li>Charikar et al. <a class="paper" href="restricted/papers/CharikarChenColtonCountSketch.pdf">Finding Frequent Items in Data Streams</a>.</li>
+							<li>Flajolet et al. <a class="paper" href="restricted/papers/FlajoletEtAlHyperLogLog.pdf">HyperLogLog: The Analysis of a Near-Optimal Cardinality Estmiation Algorithm</a>.</li>
+						</ul>
+					</div>	
+				</td>
+			</tr>
+			
+			<!-- Week Two -->
+			<tr>
+				<td>
+					<div class="title">Balanced Trees, Part I</div>
+					<div class="day">April 5</div>
+					<div id="m0">
+						<p>
+							Balanced search trees are among the most versatile and flexible data structures. They're used extensively in theory
+							and in practice. What sorts of balanced trees exist? How would you design them? And what can you do with them?
+						</p>
+						    Slides:
+						</p>
+						<ul>
+							<li><a href="lectures/02/Slides02.pdf">Lecture Slides</a></li>
+							<li><a href="lectures/02/Small02.pdf">Condensed Slides</a></li>
+						</ul>
+						<p>
+						  Handouts:
+						</p>
+						<ul>
+						  <li><a href="handouts/060P Problem Set 1.pdf">Problem Set 1</a> | <a href="assignments/ps1_template.tex">LaTeX Template</a></li>
+						  <li><a href="handouts/060I Individual Assessment 1.pdf">Individual Assessment 1</a> | <a href="assignments/ia1_template.tex">LaTeX Template</a></li>
+						</ul>
+						<p>
+							Readings:
+						</p>
+						<ul>
+							<li>Bayer, Rudolf and McCreight, Edward. <i><a href="restricted/papers/BayerMcCreightBTrees.pdf">Organization and
+							Maintenance of Large Ordered Indices</a></i></li>
+							<li>Guibas, Leo and Sedgewick, Robert. <i><a href="restricted/papers/GuibasSedgewickRedBlack.pdf">A Dichromatic
+							Framework for Balanced Trees</a></i></li>
+						</ul>
+					</div>
+				</td>
+				
+				<td>
+					<div class="title">Balanced Trees, Part II</div>
+					<div class="day">April 7</div>
+					<div id="m0">
+						<p>
+							Our last lecture concluded with a view of red/black trees as isometries of 2-3-4 trees. How far does this
+							connection go? How can we use it to derive the rules for red/black trees? And now that we've got red/black trees,
+							what else can we do with them?
+						</p>						
+						<p>
+						  Slides:
+						</p>
+						<ul>
+							<li><a href="lectures/03/Slides03.pdf">Lecture Slides</a></li>
+                            <li><a href="lectures/03/Small03.pdf">Condensed Slides</a></li>
+						</ul>
+						<p>
+							Readings:
+						</p>
+						<ul>
+							<li>CLRS, Chapter 14.</li>
+						</ul>
+					</div>
+				</td>
+			</tr>
 
-    <!--GLOBAL HEADER-->
-    <header id="sitewide-header" aria-label="PCC main header">
-      <div class="row">
-        <div class="small-12 medium-2 large-3 xlarge-1 columns">
-          <h1>
-            <span style="position:absolute;left:-9999px;">Portland Community College | Portland, Oregon</span>
-            <a href="/">
-              <img src="/_source-v6/images/logo.svg" onerror="this.src='/_source-v6/images/logo.png'; this.onerror=null;" alt="Portland Community College" />
-            </a>
-          </h1>
-        </div>
-	      <!--
-        <div class="small-12 medium-10 large-9 columns">
-          <nav data-topbar class="top-bar" aria-label="PCC global navigation">
-            <ul class="title-area">
-              <li class="name"></li>
-              <li class="toggle-topbar menu-icon c-hamburger c-hamburger--htx"><a href="#"><span>Menu</span></a></li>
-            </ul>
-            <section class="top-bar-section small-12 medium-9 columns" aria-label="Main navigation">
-              <ul id="gnav">
-                <li id="megamenu-apply" class="has-dropdown gnav"><a href="#">Get Started</a><ul id="mega-apply" class="dropdown"><li id="mega-apply-content"></li></ul></li>
-                <li class="gnav" id="megamenu-programs"><a href="/programs/">Programs</a></li>
-                <li class="gnav"><a href="/schedule/"><span class="hide-for-medium-only class-schedule">Class </span>Schedule</a></li>
-                <li class="gnav"><a href="/about/">About</a></li>
-                <li class="gnav"><a href="/student-life/">Student Life</a></li>
-              </ul>
-            </section>
-            <section class="top-bar-section small-12 medium-3 columns" aria-label="Secondary navigation">
-              <ul class="right" id="hnav">
-                <li><a href="/search/" id="search" title="Search"><span class="hide-for-medium-only">Search</span></a></li>
-                <li><a href="/resources/" id="resources-header" title="Resources"><span class="hide-for-medium-only">Resources</span></a></li>
-                <li id="clear-hnav"><a href="/about/contact/" id="contacts" title="Contacts"><span class="hide-for-medium-only">Contacts</span></a></li>
-                <li><a href="/about/calendars/" id="calendars" title="Calendars"><span class="hide-for-medium-only">Calendars</span></a></li>
-                <li><a href="/foundation/" id="give" title="Give"><span class="hide-for-medium-only">Give</span></a></li>
-                <li id="mypcc-li"><a href="https://my.pcc.edu/" id="mypcc">MyPCC</a></li>
-              </ul>
-            </section>
-          </nav>
-        </div>
-	-->
-      </div>
-    </header><!--end global header-->
-
-	<main id="main">
-	  <!--SECONDARY HEADER-->
-	  <header id="secondary-header" aria-label="Page title">
-		<div class="row">
-		  <div id="page-title">
-			<a href="https://www.pcc.edu/instructional-support/"><h2>Instructional Support</h2></a>		  </div><!--#page-title-->
-    	</div><!--end .row-->
-  	  </header>
-
-
-  	  <!--CONTENT-->
-      	  <div id="content" aria-label="Page content" >
-		<div class="row">
-<div class="small-12  columns">
-	<nav id="breadcrumbs" aria-label="Breadcrumbs"><a href="//www.pcc.edu/">PCC</a> / <a href="https://www.pcc.edu/instructional-support/">Instructional Support</a> / <a href="https://www.pcc.edu/instructional-support/accessibility/">Creating Accessible Content</a> / <a href="https://www.pcc.edu/instructional-support/accessibility/d2l/">D2L Brightspace/Web Pages</a> / </nav>	<a name="pagecontent" id="pagecontent"></a>
-    <h3>Table Layout for Screen Readers</h3>
-    <h3>Good Table</h3>
-<p>This table is easier to understand when using a screen reader because the column headers are indicated in the html code and the cells are not merged. Adding the word &#8220;Week&#8221; in column one cells also makes the information flow better when it is read aloud by the screen reader. Using the word &#8220;to&#8221; in the chapter assignments instead of a dash and spelling out the month in the due date column also make the table more understandable when read by assistive technologies like a screen reader.</p>
-<div class="table">
-<table>
-<caption class="visually-hide">Example of a good table</caption>
-<thead>
-<tr>
-<th scope="col">Week</th>
-<th scope="col">Assignment</th>
-<th scope="col">Due Date</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Week 1</td>
-<td>Reading Chapters 1 to 3</td>
-<td>January 20</td>
-</tr>
-<tr>
-<td>Week 1</td>
-<td>Post Introductions to Discussion List</td>
-<td>January 20</td>
-</tr>
-<tr>
-<td>Week 2</td>
-<td>Read Chapters 4 to 6</td>
-<td>February 1</td>
-</tr>
-<tr>
-<td>Week 3</td>
-<td>Read Chapter 7</td>
-<td>February 8</td>
-</tr>
-<tr>
-<td>Week 3</td>
-<td>Paper Due</td>
-<td>February 9</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3>Bad Table</h3>
-<p>This table is more difficult for a blind student to understand because the column headers are not labeled in the html code, and the merged cells confuse the reading order and the use of a dash and month abbreviations is not very clear.</p>
-<div class="table">
-<table>
-<caption class="visually-hide">Example of a bad table</caption>
-<tbody>
-<tr>
-<th scope="col">Week</th>
-<th scope="col">Assignment</th>
-<th scope="col">Due Date</th>
-</tr>
-<tr>
-<td rowspan="2">1</td>
-<td>Reading Chapters 1-3</td>
-<td rowspan="2">Jan. 20</td>
-</tr>
-<tr>
-<td>Post Introductions to Discussion List</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Read Chapter 4-6</td>
-<td>Feb. 1</td>
-</tr>
-<tr>
-<td rowspan="2">3</td>
-<td>Read Chapter 7</td>
-<td>Feb. 8</td>
-</tr>
-<tr>
-<td>Paper Due</td>
-<td>Feb. 9</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3>Demonstration</h3>
-<p>See this <a href="http://www.youtube.com/watch?v=XN2MTLNH5Xk" target="_blank" rel="noopener">video example of a screen reader reading these two tables</a>.</p>
-</div> <!--end content-->
-
-<!--SIDEBAR-->
-
-<!-- END WP PAGE -->
-
-<!-- BEGIN WP FOOTER -->
-
-		</div><!--end .row-->
-	  </div><!--end #content-->
-	</main><!--end main-->
-
-	<!--FOOTER-->
-	<footer aria-label="PCC footer">
-		<div class="row" data-equalizer>
-      <h2 class="visually-hide">Continue exploring PCC</h2>
-        <div class="small-6 large-3 columns" data-equalizer-watch>
-          <h3>Student essentials</h3>
-          <ul>
-            <li><a href="https://www.pcc.edu/enroll/">Get started: Admissions</a></li>
-            <li><a href="https://www.pcc.edu/enroll/paying-for-college/">Paying for college</a></li>
-            <li><a href="https://www.pcc.edu/enroll/registration/academic-calendar.html">Academic calendar</a></li>
-			<li><a href="https://www.pcc.edu/online/">Online Learning</a></li>
-          </ul>
-        </div>
-        <div class="small-6 large-3 columns" data-equalizer-watch>
-          <h3>On campus</h3>
-          <ul>
-            <li><a href="https://www.pcc.edu/locations/">Locations and maps</a></li>
-            <li><a href="https://www.pcc.edu/transportation/">Transportation</a></li>
-			<li><a href="https://www.pcc.edu/library/">Library</a></li>
-            <li><a href="https://www.pcc.edu/resources/bookstore/">Bookstore</a></li>
-          </ul>
-        </div>
-        <div class="small-6 large-3 columns" data-equalizer-watch>
-          <h3>Connect</h3>
-          <ul>
-            <li><a href="https://www.pcc.edu/hr/jobs/">Jobs at PCC</a></li>
-            <li><a href="https://panthers.pcc.edu/">Panther Athletics</a></li>
-            <li><a href="https://www.pcc.edu/resources/guia/">Gu&iacute;a en espa&ntilde;ol</a></li>
-            <li><a href="https://www.pcc.edu/social/">Panther Pride</a></li>
-          </ul>
-        </div>
-        <div class="small-6 large-3 columns" data-equalizer-watch>
-          <h3>Get help</h3>
-          <ul>
-            <li><a href="https://www.pcc.edu/accessibility/">Accessibility</a></li>
-            <li><a href="https://www.pcc.edu/about/policy/privacy.html">Privacy policy</a></li>
-            <li><a href="https://www.pcc.edu/web-services/help/">Get help with this website</a></li>
-            <li><a href="https://www.pcc.edu/web-services/corrections/">Send website corrections</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="small-12 medium-6 medium-push-6 columns" data-equalizer-watch>
-          <ul id="social">
-            <li><a href="https://www.facebook.com/portlandcc/" target="_blank" title="Facebook"><i class="fab fa-facebook" role="img" title="PCC Facebook" aria-label="pcc facebook"><span class="hide">PCC Facebook</span></i></a></li>
-            <li><a href="https://twitter.com/portlandcc" target="_blank" title="Twitter"><i class="fab fa-twitter" role="img" title="PCC Twitter" aria-label="pcc twitter"><span class="hide">PCC Twitter</span></i></a></li>
-            <li><a href="https://www.instagram.com/portlandcommcollege/" target="_blank" title="Instagram"><i class="fab fa-instagram" role="img" title="PCC Instagram" aria-label="pcc instagram"><span class="hide">PCC Instagram</span></i></a></li>
-            <li><a href="https://www.youtube.com/user/PCCvideos" target="_blank" title="YouTube"><i class="fab fa-youtube" role="img" title="PCC YouTube" aria-label="pcc youtube"><span class="hide">PCC YouTube</span></i></a></li>
-          </ul>
-        </div>
-        <div class="small-12 medium-6 medium-pull-6 columns">
-					<p>Copyright &copy; 2000<span id="current-year">-2022</span> Portland Community College
-					<span id="wp-login">| <a href="https://www.pcc.edu/instructional-support/wp-login.php">Log in<span class="visually-hide"> to the website editor</span></a></span>
-					<br>
-          An Affirmative Action Equal Opportunity Institution</p>	
-        </div>
-    	</div>
-		</footer>
-
-    <!--[if gt IE 8]><!-->
-    <script type='text/javascript' src='https://www.pcc.edu/_source-v6/vendor/jquery-2.1.1/jquery.min.js?ver=2.1.1b' id='jquery2-js'></script>
-<script type='text/javascript' src='https://www.pcc.edu/_source-v6/vendor/foundation-5.4.0/js/vendor/modernizr.js?ver=2.8.3' id='modernizr-js'></script>
-<script type='text/javascript' src='https://www.pcc.edu/_source-v6/vendor/foundation-5.4.0/js/foundation.min.js?ver=5.4.0' id='foundation-js'></script>
-<script type='text/javascript' src='https://www.pcc.edu/_source-v6/scripts/pcc-wordpress.min.js?ver=20210420' id='pcc-wordpress-js'></script>
-<script type='text/javascript' src='https://www.pcc.edu/instructional-support/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
-	<script>$(document).foundation();</script>
-    <!--<![endif]-->
-	</body>
-</html>
-<!-- Dynamic page generated in 0.308 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2022-05-03 05:14:05 -->
-
-<!-- Compression = gzip -->
+			
+			<!-- Week One -->			
+			<tr>
+				<td>
+					<div class="title">Range Minimum Queries, Part One</div>
+					<div class="day">March 29</div>
+					<div id="m0">
+						<p>
+							The range minimum query problem is the following: given an array,
+							preprocess it so that you can efficiently determine the smallest
+							value in a variety of subranges. RMQ has tons of applications
+							throughout computer science and is an excellent proving ground for
+							a number of advanced algorithmic techniques.
+						</p>
+						<p>
+						  Slides:
+						</p>
+						<ul>
+							<li><a href="lectures/00/Slides00.pdf">Slides</a></li>
+							<li><a href="lectures/00/Small00.pdf">Condensed Slides</a></li>
+						</ul>
+						<p>
+							Readings: 
+						</p>
+						<ul>
+							<li><a href="handouts/000 Course Information.pdf">Handout 00: Course Information</a></li>
+							<li><a href="handouts/010 CS166 Calendar.pdf">Handout 01: CS166 Calendar</a></li>
+							<li><a href="handouts/020 Mathematical Terms and Identities.pdf">Handout 02: Math Terms and Identities</a></li>
+							<li><a href="handouts/030 Assignment Policies.pdf">Handout 03: Assignment Policies</a></li>
+							<li><a href="handouts/040 Honor Code.pdf">Handout 04: CS166 and the Honor Code</a></li>
+						</ul>
+						<p>
+						    Assignments:
+						</p>
+						<ul>
+						    <li><a href="https://forms.gle/KesdCgq7xGwiZmSL6">Individual Assessment 0</a></li>
+						</ul>
+					</div>
+					
+				</td>
+				<td>
+					<div class="title">Range Minimum Queries, Part Two</div>
+					<div class="day">March 31</div>
+					<div id="w0">
+						<p>
+							Our last lecture took us very, very close to a &langle;O(n), O(1)&rangle;-time solution to RMQ.
+							Using a new data structure called a Cartesian tree in conjunction with a technique called the
+							Method of Four Russians, we can adapt our approach to end up with a linear-preprocessing-time,
+							constant-query-time solution to RMQ. In doing so, we'll see a number of clever techniques that
+							will appear time and time again in data structure design.
+						</p>
+						<p>
+						    Slides:
+						</p>
+						<ul>
+							<li><a href="lectures/01/Slides01.pdf">Lecture Slides</a></li>
+							<li><a href="lectures/01/Small01.pdf">Condensed Slides</a></li>
+						</ul>
+						<p>
+							Readings:
+						</p>
+						<ul>
+							<li>Fischer, Johannes and Heun, Volker. <i><a href="restricted/papers/FischerHeunRMQLCA.pdf">Theoretical and Practical Improvements
+							on the RMQ-Problem, with Applications to LCA and LCE</a></i>
+						</ul>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div> 
+</body> 
+</html> 
