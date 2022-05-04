@@ -13,6 +13,24 @@
 		  border-collapse: collapse;
 		}
 	</style>
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	.column {
+	  float: left;
+	  width: 33.33%;
+	  padding: 5px;
+	}
+
+	/* Clearfix (clear floats) */
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+	</style>
 </head> 
 	
 	
@@ -22,16 +40,16 @@
 	<div id = "announcement_bar">		 
 			 
   		<div class="content container"> 
-			<div class="col-md-12 row">
-				<div class="col-xs-4">
+			<div class="row">
+				<div class="column">
 				    <img width="200" height="200"  src="images/logo.png"  width="100%" height="auto">
 				</div>
 
-				<div class="col-xs-4">
+				<div class="column">
 				    <img width="200" height="200"  src="images/NMCC-logo.png"  width="100%" height="auto">
 				</div>
 
-				<div class="col-xs-4">
+				<div class="column">
 				    <img width="200" height="200"  src="images/NMCC-logo2.png"  width="100%" height="auto">
 				</div>
 			</div>
