@@ -1,0 +1,29 @@
+                            Assignment 2
+
+Without running the following programs.
+Write  the expected results in the print statement
+
+Q1.   x = y = 4
+      y = x + 2
+      print(x, y)
+
+
+Q2.   x = x + 1
+      x = 2
+      print(x)
+
+Q3.   x, y, z = 5, 8.0, 9
+      print(type(x), type(y), type(z))
+
+Q4.  x, y, z = 5, 8.0, 9
+     x  = y + z
+     y = x + z
+     z = x + y
+     print(x, y, z, w)
+
+Q5.  x = y = 4
+     y = 5
+     print(x, y)
+
+
+After writing the results for Q1-Q5, now open your google colab and run Q1-Q5  to see if your result are correct. 
