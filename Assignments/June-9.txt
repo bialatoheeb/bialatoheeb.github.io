@@ -1,0 +1,59 @@
+                                        Assignment 3
+
+
+                                            Part A
+    Select the answers to the following questions
+    Q1. The lists l1 = [1, 2, 3] is the same as the list l2 = [2, 3, 1]
+       a. True          b. False
+
+    Q2. A list may contain any type of object except another lists
+       a. True          b. False
+
+    Q3. Given x = [10, [4, 5], 'Habeeb', 7, 8]. What expression returns the 'a' in 'Habeeb'? Select as many as possible
+      a. x[2][4]       b. x[0][1]       c. x[-2][1]     d. x[2][1]        e. x[-3][-5]
+
+    Q4. Using same expression in  question 3 above, What expression returns the [[4, 5], 'Habeeb'] ?
+       a. x[0:2]      b. x[1:2]         c. x[1:3]   d. x[-3:-1]
+
+    Q5. Which of the following statements are True? Select as many as possible
+      a. Strings are immutable objects
+      b. Indexing a list from using the negative number always gives error
+      c. Given a = (1, 2), I can write the code a[1] = 3 to change the value 2 to 3
+      d. Given s = 'Tim', I can write the code s[0] = 'L' to change the string s with value 'Tim' to 'Lim'
+
+
+                                Part B
+  Without running the following programs, write  the expected results statement
+Q1.   Given t1 = (3.4, 7, 9, 'Ben', 'Jack')
+      Find
+      a. t1[0]
+      b. t1[9]
+      c. t1[-1:-2]
+      d. type(t1[-1])
+      e. type(t1)
+      f. Is it possible to change t1[0] to (4, 5), that is t1[0] = (4, 5)
+      g. If your answer to (d) is Yes, what is t1[0] now.
+
+
+Q2.   Given t2 = 'My name is John Smith'
+      Find
+      a. t2[-7]
+      b. t2[2:8]
+      c. t2[-7:-1]
+      d. Is it possible to change t2[1] to '4', that is t2[1] = 4
+      e. If your answer to (d) is Yes, what is t2[1:4] now.
+
+Q3.  Given t3 = ['Ben', 'Laura', 'Abdullah', ['Ken'], [3, 2, ('67', '78')], (5, 8, '9', [10, 20])]
+     Write the code to retrieve the following values or items
+     a. 'Ben'
+     b. 'Ken'
+     c. ['Ken']
+     d. '78'
+     e. 20
+     f. ('67', '78')
+     g. (8, '9')
+     h. 'Abd'
+     i. 'ra'
+
+
+After writing the results for Q1-Q3 of Part B, now open your google colab and run Q1-Q5  to see if your result are correct.
