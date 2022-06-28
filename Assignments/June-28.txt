@@ -1,0 +1,26 @@
+				Assignment 4
+
+
+    			Part A
+Select the answers to the following questions
+
+	Q1. Given the list L1 = [1, 2, 3] with L3 = L1[:] and L2 = L1. Is  L2 and L3 the same?
+	a. True          b. False
+
+	Q2. The keys of a dictionary can contain any data type
+	a. True          b. False
+
+	Q3. Given x = {‘Habeeb’ : 65, ’Toheeb’ : 78, ‘Austin’ : 45}.  What expression returns the keys in the x.
+	a.x.keys       b. x.values()      c. x.keys()     d. x.values
+
+	Q4. Which of the following statements are True? Select as many as possible
+	a. Strings are mutable objects
+	b. The key-value pairs in dictionaries can be of any data type
+	c. Given x1 = (‘toy’, ‘green’), the code x.append(‘pencil’) will result in an error
+	d. Dictionaries are immutable
+
+
+			Part B
+
+Write a dictionary that consist of the names of your siblings and their favorite sports. Ensure the values are stored as lists.
+An example is  X = {‘Toheeb’ : [‘soccer’, ‘volley ball’]}
