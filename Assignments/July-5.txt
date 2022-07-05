@@ -31,5 +31,5 @@ Use a for loop and if statement for this assignment
    As an example: given x = [9, -10, 6, 19], your program should return 19.
    You can test with the list given above or just create your own list
 
-10. Write a program to find factorial of a given number.
-    The number should be requested from the suer of your code.
+10. Write a program to find the factorial of a given number.
+    The number should be requested from the user of your code.
