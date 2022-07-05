@@ -1,0 +1,35 @@
+                      Assignment 6
+
+
+                          Part A
+Use a for loop and if statement for this assignment
+
+1. Write a program that that sums all the odd numbers from 5 to 200 inclusive
+
+2. Given x = ['K1', 'K2', 'L1', 'K5', 'L3', 'L7', 'L9', 'K0', 'H1', 'K4', 'G1', 'F1'],
+   find all the items in x that begins with 'L'
+
+3. Calculate the average of all numbers from 1 to a given number.
+  The given number should be requested from the user of your code.
+  (Add a flag to ensure the number is greater than 1)
+
+4. Display the items in a list at odd index positions
+
+5. Given names = ['Aaliyah', 'AbdulSamad' , 'Kaosar', 'Suad', 'Toheeb', 'Zayan'].
+   Write a for loop which print "Hello!, " plus each name in the list. i.e.: "Hello!, Toheeb"
+
+6. Write a program that appends the cube of each number to a new list.
+
+7. Write a program to separate postive and negative numbers. Your program
+   will have two new list, one for postive numbers and another for negative numbers.
+   You can test your code with x = [-1, 4, 98, 8, -9, -809, 56, -25, -67, -96, 45, 83]
+
+8. Write a program to reverse a word. The word should be requested from the user of your code.
+  As an example, if the user types "Toheeb", your code should print "beehoT"
+
+9. Write a program that returns the maximum number in a list.
+   As an example: given x = [9, -10, 6, 19], your program should return 19.
+   You can test with the list given above or just create your own list
+
+10. Write a program to find factorial of a given number.
+    The number should be requested from the suer of your code.
